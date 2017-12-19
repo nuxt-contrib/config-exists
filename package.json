@@ -2,18 +2,28 @@
   "name": "config-exists",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/clarkdo/config-exists",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkdo/config-exists.git"
+  },
   "author": "Clark Du",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "fixtures"
+    ]
+  },
   "devDependencies": {
     "eslint": "^4.12.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.0.0"
   },
-  "dependencies": {
-    "fs-extra": "^5.0.0"
-  }
+  "dependencies": {}
 }
